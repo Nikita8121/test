@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>App</title>
+    </head>
+    <body>
+        {{message}}
+        <table>
+            <tr>
+                <th>category</th>
+                <th>datetime</th>
+                <th>headline</th>
+                <th>id</th>
+                <th>image</th>
+                <th>source</th>
+                <th>summary</th>
+                <th>url</th>
+            </tr>
+            {{#each data1}}
+                <tr>
+                    <td>{{category}}</td>
+                    <td>{{datetime}}</td>
+                    <td>{{headline}}</td>
+                    <td>{{id}}</td>
+                    <td>{{image}}</td>
+                    <td>{{source}}</td>
+                    <td>{{summary}}</td>
+                    <td>{{url}}</td>
+                </tr>
+            {{/each}}
+        </table>
+
+        <table>
+            <tr>
+                <th>Status</th>
+                <th>Impact</th>
+                <th>Data</th>
+                <th>Name</th>
+                <th>Actual</th>
+                <th>Forecast</th>
+                <th>Previous</th>
+            </tr>
+            {{#each data2}}
+                <tr>
+                    <td>{{status}}</td>
+                    <td>{{impact}}</td>
+                    <td>{{data}}</td>
+                    <td>{{name}}</td>
+                    <td>{{actual}}</td>
+                    <td>{{forecast}}</td>
+                    <td>{{previous}}</td>
+                </tr>
+            {{/each}}
+        </table>
+
+        <table>
+            <tr>
+                <th>name</th>
+                <th>status</th>
+                <th>datetime</th>
+                <th>price</th>
+                <th>min_price</th>
+                <th>volume</th>
+            </tr>
+
+            <tr>
+                <td>{{data3.name}}</td>
+                <td>{{data3.status}}</td>
+                <td>{{data3.datetime}}</td>
+                <td>{{data3.price}}</td>
+                <td>{{data3.min_price}}</td>
+                <td>{{data3.volume}}</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>position</th>
+                <th>opter</th>
+                <th>monos</th>
+            </tr>
+             {{#each data4}}
+            <tr>
+                <td>{{position}}</td>
+                <td>{{opter}}</td>
+                <td>{{monos}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+        
+
+    </body>
+</html>
+        
+      
+  </body>
+</html>
